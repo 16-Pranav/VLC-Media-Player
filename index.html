@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./reset.css" />
   </head>
@@ -36,8 +44,36 @@
     </header>
 
     <main id="main"></main>
+    <div class="toast">100%</div>
 
-    <footer></footer>
+    <footer>
+      <div class="time-container">
+        <div class="current-time" id="currentTime">--/--/--</div>
+        <div class="time-slider">
+          <input type="range" value="0" min="0" class="slider" id="slider" />
+        </div>
+        <div class="total-time" id="totalTime">--/--/--</div>
+      </div>
+
+      <div class="menu-btns">
+            <div class="play_pause-container btn" id="playPause">
+            </div>
+            <div class="rest-options">
+                <div class="back-btn btn" id="backBtn">
+                    <i class="fas fa-backward"></i>
+                </div>
+                <div class="placeholder btn" id="stopBtn">
+                    <i class="fas fa-stop"></i>
+                </div>
+                <div class="forward-btn btn" id="forwardBtn">
+                    <i class="fas fa-forward"></i>
+                </div>
+                <div class="fullscreen-btn btn" id="fullScreen">
+                    <i class="fas fa-expand"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
   </body>
 
   <script src="./index.js"></script>
